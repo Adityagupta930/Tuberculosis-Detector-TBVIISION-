@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Detector</title>
+
+    <link rel="stylesheet" type="text/css"
+    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.1.3/assets/owl.carousel.min.css" />
+
+  <!-- bootstrap core css -->
+  <link rel="stylesheet" type="text/css" href="E:/TB/tbvision/css/bootstrap.css" />
+
+  <!-- fonts style -->
+  <link href="https://fonts.googleapis.com/css?family=Dosis:400,500|Poppins:400,700&display=swap" rel="stylesheet">
+  <!-- Custom styles for this template -->
+  <link href="E:/TB/tbvision/css/style.css" rel="stylesheet" />
+  <!-- responsive style -->
+  <link href="E:/TB/tbvision/css/responsive.css" rel="stylesheet" />
+</head>
+
+<body>
+    <header class="header_section">
+        <div class="container-fluid">
+          <nav class="navbar navbar-expand-lg custom_nav-container ">
+            <a class="navbar-brand" href="E:/TB/tbvision/template/Detector.html">
+              <img src="E:/TB/tbvision/images/logo.png" alt="">
+              <span>
+                TB Vision
+              </span>
+            </a>
+          </nav>
+        </div>
+      </header>
+    
+      <section class=" slider_section position-relative">
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+  
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="container-fluid">
+                <div class="row">
+                  <div class="col-md-4 offset-md-2">
+                    <div class="slider_detail-box">
+                      <form action="/upload" method="post" enctype="multipart/form-data">
+                        <input type="file" accept="image/png, image/jpeg" name="image"><br>
+                        <input type="submit" value="Upload">
+                      </form>  
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="slider_img-box">
+                      <img src="E:/TB/tbvision/images/x-ray.png" alt="">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+           
+          </div>
+        </div>
+  
+      </section>  
+</body>
+</html>

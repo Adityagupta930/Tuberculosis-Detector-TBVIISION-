@@ -1,0 +1,68 @@
+version: "3.1"
+
+intents:
+  - greet
+  - goodbye
+  - affirm
+  - deny
+  - mood_great
+  - mood_unhappy
+  - bot_challenge
+  - symp
+  - med
+  - tb
+  - Precaution
+  - problem
+  - one_problem
+responses:
+  utter_greet:
+  - text: "Hey! How can i help you?"
+    buttons:
+    - title: "What is TB?"
+      payload: "/What is TB?"
+    - title: "Medicine"
+      payload: "/Medicine"
+    - title: "Precaution"
+      payload: "/Precaution"
+    - title: "Symptoms"
+      payload: "/Symptoms"
+
+  utter_cheer_up:
+  - text: "Here is something to cheer you up:"
+    image: "https://i.imgur.com/nGF1K8f.jpg"
+
+  utter_did_that_help:
+  - text: "Did that help you?"
+
+  utter_happy:
+  - text: "Great, carry on!"
+
+  utter_goodbye:
+  - text: "Bye"
+
+  utter_iamabot:
+  - text: "I am a bot, powered by Rasa."
+
+  utter_tb:
+  - text: "Tuberculosis (TB) is a serious illness that mainly affects the lungs. \n The germs that cause tuberculosis are a type of bacteria."
+
+  utter_symp:
+  - text: "Commom Symptoms of TB are : \n • chest pain \n • weakness \n • fatigue \n • weight loss \n • fever \n • night sweats "
+
+  utter_med:
+  - text: "government provide TB medicine from particular center for free  \n • Rifampin (RIF), \n • Isoniazid (INH) \n • Pyrazinamide (PZA) \n • Ethambutol (EMB) \n Or Go to near by doctor "
+
+  utter_pre:
+  - text: "avoid segregate , achohol and maintent distance from others even talking cover mouth and take healthy food\n
+   Provide tissue, surgical masks, hand-hygiene products, \n
+   and waste containers in common areas, such as waiting rooms,\n 
+   so people with respiratory symptoms can contain coughing and sneezing."
+  
+  utter_problem:
+  - text: "You might have TB. \n Go to near by doctor \n and check your Sputum test"
+  utter_one_problem:
+  - text: "You have less chances of TB. \n Go to near by doctor \n and check your Sputum test"
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

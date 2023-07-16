@@ -1,0 +1,43 @@
+version: "3.1"
+
+rules:
+
+- rule: Say goodbye anytime the user says goodbye
+  steps:
+  - intent: goodbye
+  - action: utter_goodbye
+
+- rule: Say 'I am a bot' anytime the user challenges
+  steps:
+  - intent: bot_challenge
+  - action: utter_iamabot
+
+- rule: tell about tb
+  steps:
+  - intent: tb
+  - action: utter_tb
+
+- rule: tell about symp
+  steps:
+  - intent: symp
+  - action: utter_symp
+
+- rule: tell about med
+  steps:
+  - intent: med
+  - action: utter_med
+
+- rule: tell about Pre
+  steps:
+  - intent: Precaution
+  - action: utter_pre
+
+- rule: tell about problem
+  steps:
+  - intent: problem
+  - action: utter_problem
+
+- rule: tell about one problem
+  steps:
+  - intent: one_problem
+  - action: utter_one_problem
